@@ -12,6 +12,10 @@ namespace DFC.Infra.Data.Mappings
             builder.Property(e => e.Valor)
                .IsRequired();
 
+            builder.Ignore(e => e.ValidationResult);
+
+            builder.Ignore(e => e.CascadeMode);
+
             builder.ToTable("Movimentacoes");
 
             builder.HasOne(e => e.Conta).WithMany(e => e.Movimentacao).HasForeignKey(p => p.IdConta).IsRequired();

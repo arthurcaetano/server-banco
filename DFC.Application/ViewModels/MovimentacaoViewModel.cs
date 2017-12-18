@@ -5,6 +5,7 @@ namespace DFC.Application.ViewModels
 {
     public class MovimentacaoViewModel
     {
+        public int Id { get; set; }
         public decimal Valor { get; set; }
         public EnumTipoMovimentacao Tipo { get; set; }
         public DateTime Data { get; set; }

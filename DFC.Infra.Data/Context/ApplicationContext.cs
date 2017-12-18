@@ -14,6 +14,7 @@ namespace DFC.Infra.Data.Context
         { }
         public DbSet<Banco> Bancos { get; set; }
         public DbSet<Conta> Contas { get; set; }
+        public DbSet<Movimentacao> Movimentacoes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
