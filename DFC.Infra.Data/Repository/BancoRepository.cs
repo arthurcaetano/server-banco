@@ -16,9 +16,18 @@ namespace DFC.Infra.Data.Repository
             
         }
 
+        public override void Adicionar(Banco banco)
+        {
+            Db.Add(banco);
+        }
         public override Banco ObterPorId(int id)
         {
             return Db.Bancos.Include(p => p.Agencias).AsNoTracking().FirstOrDefault(p => p.Id == id);
+        }
+
+        public override IEnumerable<Banco> ObterTodos()
+        {
+            return Db.Bancos.Include(p => p.Agencias).AsNoTracking().ToList();
         }
     }
 }

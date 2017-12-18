@@ -1,4 +1,6 @@
-﻿using DFC.Domain.Core;
+﻿using System.Collections;
+using System.Collections.Generic;
+using DFC.Domain.Core;
 using DFC.Domain.Core.Enums;
 
 namespace DFC.Domain
@@ -7,15 +9,28 @@ namespace DFC.Domain
     {
         public string Titular { get; private set; }
         public string CpfCnpj { get; private set; }
+        public string Numero { get; private set; }
         public EnumTipoConta TipoConta { get; private set; }
         public EnumTipoPessoa TipoPessoa { get; private set; }
+        public Banco Banco { get; private set; }
+        public int IdBanco { get; private set; }
+        public ICollection<Movimentacao> Movimentacao { get; private set; }
 
-        public Conta(string titular, string cpfCnpj, EnumTipoPessoa tipoPessoa, EnumTipoConta tipoConta)
+        protected Conta()
+        {
+
+        }
+
+        public Conta(string titular, string cpfCnpj, string numero, EnumTipoConta tipoConta, EnumTipoPessoa tipoPessoa, Banco banco, int idBanco, ICollection<Movimentacao> movimentacao)
         {
             Titular = titular;
             CpfCnpj = cpfCnpj;
-            TipoPessoa = tipoPessoa;
+            Numero = numero;
             TipoConta = tipoConta;
+            TipoPessoa = tipoPessoa;
+            Banco = banco;
+            IdBanco = idBanco;
+            Movimentacao = movimentacao;
         }
 
         public override bool EhValido()

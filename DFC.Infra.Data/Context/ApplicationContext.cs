@@ -13,10 +13,13 @@ namespace DFC.Infra.Data.Context
             : base(options)
         { }
         public DbSet<Banco> Bancos { get; set; }
+        public DbSet<Conta> Contas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.AddConfiguration(new BancoMapping());
+            modelBuilder.AddConfiguration(new ContaMapping());
+            modelBuilder.AddConfiguration(new MovimentacaoMapping());
 
             base.OnModelCreating(modelBuilder);
         }

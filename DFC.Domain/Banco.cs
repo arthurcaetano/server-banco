@@ -7,6 +7,7 @@ namespace DFC.Domain
     {
         public string Nome { get; private set; }
         public ICollection<BancoAgencia> Agencias { get; private set; }
+        public ICollection<Conta> Contas { get; private set; }
 
         protected Banco()
         {

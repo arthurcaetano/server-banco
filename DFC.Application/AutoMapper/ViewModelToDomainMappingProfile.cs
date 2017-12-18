@@ -15,6 +15,8 @@ namespace DFC.Application.AutoMapper
         public ViewModelToDomainMappingProfile()
         {
             CreateMap<BancoViewModel, Banco>();
+            CreateMap<ContaViewModel, Conta>();
+            CreateMap<MovimentacaoViewModel, Movimentacao>();
             CreateMap<BancoAgenciaViewModel, BancoAgencia>();
         }
     }

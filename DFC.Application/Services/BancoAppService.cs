@@ -58,6 +58,10 @@ namespace DFC.Application.Services
             var banco = _bancoRepository.ObterPorId(id);
             if(banco != null)
                 _bancoRepository.Remover(id);
+            if (!Commit())
+            {
+                //todo: falha ao salvar
+            }
         }
 
         public BancoViewModel ObterPorId(int id)

@@ -27,11 +27,13 @@ namespace DFC.Infra.IoC
 
             // Infra - Data
             services.AddScoped<IBancoRepository, BancoRepository>();
+            services.AddScoped<IContaRepository, ContaRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ApplicationContext>();
 
             //Application
             services.AddScoped<IBancoAppService, BancoAppService>();
+            services.AddScoped<IContaAppService, ContaAppService>();
 
         }
     }
