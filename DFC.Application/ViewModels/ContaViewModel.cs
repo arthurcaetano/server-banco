@@ -11,7 +11,7 @@ namespace DFC.Application.ViewModels
         public string Numero { get; set; }
         public EnumTipoConta TipoConta { get; set; }
         public EnumTipoPessoa TipoPessoa { get; set; }
-        public int IdBanco { get; set; }
+        public int IdBancoAgencia { get; set; }
         public ICollection<MovimentacaoViewModel> Movimentacao { get; set; }
     }
 }

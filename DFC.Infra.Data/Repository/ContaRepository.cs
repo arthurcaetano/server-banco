@@ -22,7 +22,7 @@ namespace DFC.Infra.Data.Repository
         }
         public override Conta ObterPorId(int id)
         {
-            return Db.Contas.Include(p => p.Banco).Include(p => p.Movimentacao).AsNoTracking().FirstOrDefault(p => p.Id == id);
+            return Db.Contas.Include(p => p.Agencia.Banco).Include(p => p.Movimentacao).AsNoTracking().FirstOrDefault(p => p.Id == id);
         }
 
         public override IEnumerable<Conta> ObterTodos()

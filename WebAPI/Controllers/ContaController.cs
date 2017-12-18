@@ -98,7 +98,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("contas/{id:long}")]
+        [Route("contas/{id:int}")]
         public IActionResult Delete(int id)
         {
             var contaViewModel = new ContaViewModel { Id = id };

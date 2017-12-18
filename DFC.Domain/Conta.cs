@@ -12,8 +12,8 @@ namespace DFC.Domain
         public string Numero { get; private set; }
         public EnumTipoConta TipoConta { get; private set; }
         public EnumTipoPessoa TipoPessoa { get; private set; }
-        public Banco Banco { get; private set; }
-        public int IdBanco { get; private set; }
+        public BancoAgencia Agencia { get; private set; }
+        public int IdBancoAgencia { get; private set; }
         public ICollection<Movimentacao> Movimentacao { get; private set; }
 
         protected Conta()
@@ -21,15 +21,15 @@ namespace DFC.Domain
 
         }
 
-        public Conta(string titular, string cpfCnpj, string numero, EnumTipoConta tipoConta, EnumTipoPessoa tipoPessoa, Banco banco, int idBanco, ICollection<Movimentacao> movimentacao)
+        public Conta(string titular, string cpfCnpj, string numero, EnumTipoConta tipoConta, EnumTipoPessoa tipoPessoa, BancoAgencia agencia, int idBanco, ICollection<Movimentacao> movimentacao)
         {
             Titular = titular;
             CpfCnpj = cpfCnpj;
             Numero = numero;
             TipoConta = tipoConta;
             TipoPessoa = tipoPessoa;
-            Banco = banco;
-            IdBanco = idBanco;
+            Agencia = agencia;
+            IdBancoAgencia = idBanco;
             Movimentacao = movimentacao;
         }
 

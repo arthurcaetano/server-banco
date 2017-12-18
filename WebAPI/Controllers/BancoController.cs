@@ -98,7 +98,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("bancos/{id:long}")]
+        [Route("bancos/{id:int}")]
         public IActionResult Delete(int id)
         {
             var bancoViewModel = new BancoViewModel { Id = id };

@@ -22,7 +22,7 @@ namespace DFC.Infra.Data.Mappings
 
             builder.ToTable("Contas");
 
-            builder.HasOne(e => e.Banco).WithMany(e => e.Contas).HasForeignKey(p => p.IdBanco).IsRequired();
+            builder.HasOne(e => e.Agencia).WithMany(e => e.Contas).HasForeignKey(p => p.IdBancoAgencia).IsRequired();
 
             builder.HasMany(e => e.Movimentacao)
                 .WithOne(e => e.Conta)

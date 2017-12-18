@@ -56,8 +56,13 @@ namespace DFC.Application.Services
         public void Excluir(int id)
         {
             var conta = _contaRepository.ObterPorId(id);
-            if(conta != null)
+            if (conta != null)
                 _contaRepository.Remover(id);
+
+            if (!Commit())
+            {
+                //todo: falha ao salvar
+            }
         }
 
         public ContaViewModel ObterPorId(int id)

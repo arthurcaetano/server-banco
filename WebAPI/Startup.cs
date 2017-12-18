@@ -17,8 +17,8 @@ namespace WebAPI
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile("appsettings.json", false, true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
                 .AddEnvironmentVariables();
 
             Configuration = builder.Build();
@@ -44,11 +44,10 @@ namespace WebAPI
                 s.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "EventosEP.IO API",
-                    Description = "API do site EventosEP.IO",
+                    Title = "Movimentação Bancaria API",
+                    Description = "API do site Movimentação Bancaria",
                     TermsOfService = "Nenhum",
-                    Contact = new Contact { Name = "Desenvolvedor X", Email = "email@eventos.io", Url = "http://eventos.io" },
-                    License = new License { Name = "MIT", Url = "http://eventos.io/licensa" }
+                    Contact = new Contact { Name = "Alex, Arthur, Édipo, Felipe" },
                 });
             });
 
