@@ -5,7 +5,7 @@ API Restful da aplicação de banco para disciplina de frameworks e componentes
 
 * Instalar o Visual Studio 2017
 * Abrir o Visual Studio 2017 como administrador
-* Abrir o projeto bancoApi conforme a imagem abaixo
+* Abrir a solução DFC.sln conforme a imagem abaixo
 
  ![Abrir projeto](/AbrirProjeto.png)
 * Definir o projeto api como startup conforme a imagem abaixo
