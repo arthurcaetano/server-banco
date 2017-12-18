@@ -3,3 +3,20 @@
 ################################################################################
 
 /.vs/DFC/v15/Server/sqlite3
+/DFC.Application/bin/Debug/netcoreapp2.0
+/DFC.Application/obj/Debug/netcoreapp2.0
+/DFC.Application/obj
+/DFC.Application.Core/bin/Debug/netcoreapp2.0
+/DFC.Application.Core/obj
+/DFC.Domain/bin/Debug/netcoreapp2.0
+/DFC.Domain/obj
+/DFC.Domain.Core/bin/Debug/netcoreapp2.0
+/DFC.Domain.Core/obj
+/DFC.Infra.Data/bin/Debug/netcoreapp2.0
+/DFC.Infra.Data/obj
+/DFC.Infra.Data.Interface/bin/Debug/netcoreapp2.0
+/DFC.Infra.Data.Interface/obj
+/DFC.Infra.IoC/bin/Debug/netcoreapp2.0
+/DFC.Infra.IoC/obj
+/WebAPI/bin/Debug/netcoreapp2.0
+/WebAPI/obj

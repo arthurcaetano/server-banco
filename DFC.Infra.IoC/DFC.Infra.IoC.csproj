@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DFC.Application\DFC.Application.csproj" />
+    <ProjectReference Include="..\DFC.Domain\DFC.Domain.csproj" />
+    <ProjectReference Include="..\DFC.Infra.Data.Interface\DFC.Infra.Data.Interface.csproj" />
+    <ProjectReference Include="..\DFC.Infra.Data\DFC.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
