@@ -9,3 +9,5 @@ API Restful da aplicação de banco para disciplina de frameworks e componentes
 
  ![Abrir projeto](/AbrirProjeto.png)
 * Definir o projeto api como startup conforme a imagem abaixo
+
+ ![Definir como StartUp](/DefinirComoStartUp.png)
